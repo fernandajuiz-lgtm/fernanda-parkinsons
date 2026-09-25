@@ -38,7 +38,7 @@ import CadastrarContato from './src/telas/CadastrarContato';
 import Historico from './src/telas/Historico';
 import Acessibilidade from './src/telas/Acessibilidade';
 import MedirTremor from './src/telas/MedirTremor';
-
+import ModoCaminhada from './src/telas/ModoCaminhada';
 import { cores, fontes } from './src/estilos/tema';
 
 SplashScreen.preventAutoHideAsync();
@@ -122,6 +122,7 @@ export default function App() {
             <Stack.Screen name="Historico" component={Historico} options={{ title: '' }} />
             <Stack.Screen name="Acessibilidade" component={Acessibilidade} options={{ title: '' }} />
            <Stack.Screen name="MedirTremor" component={MedirTremor} options={{ title: '' }} />
+           <Stack.Screen name="ModoCaminhada" component={ModoCaminhada} options={{ title: '' }} />
           </Stack.Navigator>
         </NavigationContainer>
       </View>

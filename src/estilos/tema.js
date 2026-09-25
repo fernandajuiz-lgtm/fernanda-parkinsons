@@ -21,6 +21,8 @@ export const cores = {
   sosSuave: '#FBE9DC',
   historico: '#5C4459',
   historicoSuave: '#EFE7EE',
+  caminhada: '#3D7A85',
+  caminhadaSuave: '#E5F0F2',
 };
 
 export const fontes = {

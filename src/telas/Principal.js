@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from 'react';
 import { View, StyleSheet, ScrollView, SafeAreaView, TouchableOpacity } from 'react-native';
 import { useFocusEffect } from '@react-navigation/native';
-import { Pill, ClipboardList, Siren, BarChart3, Settings, Activity } from 'lucide-react-native';
+import { Pill, ClipboardList, Siren, BarChart3, Settings, Activity, Footprints } from 'lucide-react-native';
 
 import Logo from '../componentes/Logo';
 import Texto from '../componentes/Texto';
@@ -132,7 +132,7 @@ export default function Principal({ navigation }) {
             />
           </View>
                     <View style={[styles.linha, { gap: ts(espacos.md) }]}>
-            <CartaoAcao
+                       <CartaoAcao
               IconeLucide={Activity}
               titulo="Medir tremor"
               subtitulo="Usar sensores"
@@ -141,7 +141,15 @@ export default function Principal({ navigation }) {
               onPress={() => navigation.navigate('MedirTremor')}
               ts={ts}
             />
-            <View style={{ flex: 1 }} />
+            <CartaoAcao
+              IconeLucide={Footprints}
+              titulo="Ajuda pra andar"
+              subtitulo="Modo caminhada"
+              cor={cores.caminhada}
+              corSuave={cores.caminhadaSuave}
+              onPress={() => navigation.navigate('ModoCaminhada')}
+              ts={ts}
+            />
           </View>
         </View>
 
