@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from 'react';
 import { View, StyleSheet, ScrollView, SafeAreaView, TouchableOpacity } from 'react-native';
 import { useFocusEffect } from '@react-navigation/native';
-import { Pill, ClipboardList, Siren, BarChart3, Settings, Activity, Footprints } from 'lucide-react-native';
+import { Pill, ClipboardList, Siren, BarChart3, Settings, Activity, Footprints, UserCog } from 'lucide-react-native';
 
 import Logo from '../componentes/Logo';
 import Texto from '../componentes/Texto';
@@ -159,6 +159,15 @@ export default function Principal({ navigation }) {
         >
           <Icone Icone={Settings} tamanho={18} cor={cores.marca} />
           <Texto style={styles.ajusteTexto}>Ajustar acessibilidade</Texto>
+        </TouchableOpacity>
+                <TouchableOpacity
+          onPress={() => navigation.navigate('PinCuidador')}
+          style={[styles.ajuste, { marginTop: ts(espacos.sm) }]}
+        >
+          <Icone Icone={UserCog} tamanho={18} cor={cores.historico} />
+          <Texto style={[styles.ajusteTexto, { color: cores.historico }]}>
+            Sou cuidador
+          </Texto>
         </TouchableOpacity>
 
         <Texto style={[styles.rodape, { marginTop: ts(espacos.md) }]}>
