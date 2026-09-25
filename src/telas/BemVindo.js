@@ -58,7 +58,7 @@ export default function BemVindo({ navigation }) {
           </View>
 
           <Texto style={[styles.titulo, { marginBottom: ts(espacos.sm) }]}>
-            Bem-vinda(o) 👋
+            Bem-vinda(o) 
           </Texto>
 
           <Texto style={[styles.subtitulo, { marginBottom: ts(espacos.xl) }]}>
